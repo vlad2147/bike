@@ -1,0 +1,205 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+
+/* .ibg{
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  }
+  
+  .ibg img{
+  
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  } */
+
+body{
+  font-family: 'Lato', Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+
+
+.header {
+  background-image: url(./img/img1.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__list-item {
+  padding-top: 55px;
+  padding-right: 45px;
+}
+
+.nav__list-item:nth-child(3) {
+  margin-top: -29px;
+}
+
+.nav__list-item:last-child {
+  padding-right: 0;
+}
+
+.nav__list-link {
+  text-transform: uppercase;
+  margin-right: 21px;
+  color: #4d4959;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.vintage__icon1 {
+text-align: center;
+padding-top: 110px;
+padding-bottom: 24px;
+}
+
+.vintage__title {
+  font-size: 18px;
+  color: #353738;
+  font-weight: 700;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.vintage__text {
+  font-size: 18px;
+  line-height: 34px;
+  color: #848789;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 138px;
+}
+
+.brands__row {
+  display: flex;                                         /* Картинка зависит от высоты соседнего блока */
+}
+
+.brands__column66 {
+  position: relative;                                   /* Картинка зависит от высоты соседнего блока */
+  flex: 2;                                                  /* Колонка на 75% */
+}
+
+.brands__column66:hover {
+  background-color: green;
+  background-image: url(./img/Logo2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vintage__icon2 {
+  text-align: center;
+  padding-top: 67px;
+  padding-bottom: 24px;
+  }
+
+.brands__column33 {
+  flex: 1;                                                  /* Колонка на 25% */
+}
+
+.brands__column33-image {
+  width: 100%;
+}
+
+.brands__column66 img {
+  position: absolute;                               /* Картинка зависит от высоты соседнего блока */
+  object-fit: cover;                               /* Картинка зависит от высоты соседнего блока */
+  width: 100%;                                    /* Картинка зависит от высоты соседнего блока */
+  height: 100%;                                  /* Картинка зависит от высоты соседнего блока */
+  top: 0;                                       /* Картинка зависит от высоты соседнего блока */
+  left: 0;                                     /* Картинка зависит от высоты соседнего блока */
+}
+
+.vintage__text2 {
+  font-size: 18px;
+  line-height: 34px;
+  color: #848789;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.vintage__desc2  {
+  text-align: justify;
+  padding-left: 61px;
+  padding-right: 61px;
+  position: relative;
+}
+
+.vintage__desc2:after  {
+  content: " ";
+  width: 50px;
+  height: 1px;
+  background-color: rgba(53,55,56,0.2);
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.brands__column66--order{
+  order: 2;
+}
+
+.brands__column66--order:hover{
+  background-image: url(./img/Logo3.png);
+  background-color: green;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.brands__column-min {
+  flex: 0 1 33.333%;
+  
+}
+
+.brands__column {
+  flex: 0 1 33.333%;
+  position: relative;                                   /* Картинка зависит от высоты соседнего блока */
+}
+
+.brands__column img {
+  position: absolute;                               /* Картинка зависит от высоты соседнего блока */
+  object-fit: cover;                               /* Картинка зависит от высоты соседнего блока */
+  width: 100%;                                    /* Картинка зависит от высоты соседнего блока */
+  height: 100%;                                  /* Картинка зависит от высоты соседнего блока */
+  top: 0;                                       /* Картинка зависит от высоты соседнего блока */
+  left: 0;                                     /* Картинка зависит от высоты соседнего блока */
+}
+
+.brands__column-min img {
+  object-fit: contain;                               /* Картинка зависит от высоты соседнего блока */
+  width: 100%;                                    /* Картинка зависит от высоты соседнего блока */
+}
