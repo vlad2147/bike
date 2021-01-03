@@ -104,6 +104,10 @@ padding-bottom: 24px;
   padding-bottom: 138px;
 }
 
+.brands {
+  padding-bottom: 470px;
+}
+
 .brands__row {
   display: flex;                                         /* Картинка зависит от высоты соседнего блока */
 }
@@ -181,25 +185,73 @@ padding-bottom: 24px;
 }
 
 .brands__column-min {
-  flex: 0 1 33.333%;
-  
-}
-
-.brands__column {
-  flex: 0 1 33.333%;
-  position: relative;                                   /* Картинка зависит от высоты соседнего блока */
-}
-
-.brands__column img {
-  position: absolute;                               /* Картинка зависит от высоты соседнего блока */
-  object-fit: cover;                               /* Картинка зависит от высоты соседнего блока */
-  width: 100%;                                    /* Картинка зависит от высоты соседнего блока */
-  height: 100%;                                  /* Картинка зависит от высоты соседнего блока */
-  top: 0;                                       /* Картинка зависит от высоты соседнего блока */
-  left: 0;                                     /* Картинка зависит от высоты соседнего блока */
+  flex: 0 1 33.333%;                                  /* Колонки шириной по 33% */
 }
 
 .brands__column-min img {
-  object-fit: contain;                               /* Картинка зависит от высоты соседнего блока */
-  width: 100%;                                    /* Картинка зависит от высоты соседнего блока */
+  object-fit: contain;                             /* Картинка зависит от высоты соседнего блока */     /* 2.0 */
+  width: 100%;                                    /* Картинка зависит от высоты соседнего блока */     /* 2.0 */
+}
+
+.brands__column {
+  flex: 0 1 33.333%;                                  /* Колонки шириной по 33% */
+  position: relative;                                   /* Картинка зависит от высоты соседнего блока */    /* 2.0 */
+}
+
+.brands__column img {
+  position: absolute;                               /* Картинка зависит от высоты соседнего блока */     /* 2.0 */
+  object-fit: cover;                               /* Картинка зависит от высоты соседнего блока */     /* 2.0 */
+  width: 100%;                                    /* Картинка зависит от высоты соседнего блока */     /* 2.0 */
+  height: 100%;                                  /* Картинка зависит от высоты соседнего блока */     /* 2.0 */
+  top: 0;                                       /* Картинка зависит от высоты соседнего блока */     /* 2.0 */
+  left: 0;                                     /* Картинка зависит от высоты соседнего блока */     /* 2.0 */
+}
+
+
+.collage {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.column1__row1 {
+  display: flex; 
+}
+
+.collage__column1 {
+  width: 100%;
+}
+
+.collage__column1 img {
+  width: 100%;
+}
+
+.row1__img {
+  width: 100%;
+  
+}
+.row1__img img {
+  width: 100%;
+}
+
+.collage__column2 {
+  width: 100%;
+  position: relative;
+  padding-bottom: 33%;
+  
+}
+.collage__column2 img{
+  position: absolute;
+  object-fit: cover; 
+  width: 100%;  
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.min{
+  flex: 0 1 30%;
+}
+
+.big{
+  flex:0 1 60%
 }
