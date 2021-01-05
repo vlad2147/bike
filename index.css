@@ -104,9 +104,6 @@ padding-bottom: 24px;
   padding-bottom: 138px;
 }
 
-.brands {
-  padding-bottom: 470px;
-}
 
 .brands__row {
   display: flex;                                         /* Картинка зависит от высоты соседнего блока */
@@ -117,11 +114,23 @@ padding-bottom: 24px;
   flex: 2;                                                  /* Колонка на 75% */
 }
 
-.brands__column66:hover {
+/* .brands__column66:hover {
   background-color: green;
   background-image: url(./img/Logo2.png);
   background-position: center;
   background-repeat: no-repeat;
+} */
+
+.brands__column66-logo img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.brands__column66:hover img{
+  display: block;
 }
 
 .vintage__icon2 {
@@ -138,7 +147,8 @@ padding-bottom: 24px;
   width: 100%;
 }
 
-.brands__column66 img {
+/* .brands__column66 */
+.div img {
   position: absolute;                               /* Картинка зависит от высоты соседнего блока */
   object-fit: cover;                               /* Картинка зависит от высоты соседнего блока */
   width: 100%;                                    /* Картинка зависит от высоты соседнего блока */
@@ -177,13 +187,6 @@ padding-bottom: 24px;
   order: 2;
 }
 
-.brands__column66--order:hover{
-  background-image: url(./img/Logo3.png);
-  background-color: green;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .brands__column-min {
   flex: 0 1 33.333%;                                  /* Колонки шириной по 33% */
 }
@@ -198,7 +201,7 @@ padding-bottom: 24px;
   position: relative;                                   /* Картинка зависит от высоты соседнего блока */    /* 2.0 */
 }
 
-.brands__column img {
+.div2 img {
   position: absolute;                               /* Картинка зависит от высоты соседнего блока */     /* 2.0 */
   object-fit: cover;                               /* Картинка зависит от высоты соседнего блока */     /* 2.0 */
   width: 100%;                                    /* Картинка зависит от высоты соседнего блока */     /* 2.0 */
@@ -207,10 +210,42 @@ padding-bottom: 24px;
   left: 0;                                     /* Картинка зависит от высоты соседнего блока */     /* 2.0 */
 }
 
+.brands__column:hover img {
+  display: block;
+}
+
+.twitter__icon {
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 27px;
+}
+
+.twitter__title {
+  font-size: 18px;
+  color: #353738;
+  font-weight: 700;
+  font-family: "Lato";
+  text-align: center;
+  padding-bottom: 17px;
+}
+
+.twitter__title span {
+  padding-left: 10px;
+}
+
+.twitter__desc {
+  text-align: center;
+  font-size: 24px;
+  color: #848789;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Lato";
+  padding-bottom: 110px;
+}
+
 
 .collage {
   display: flex;
-  padding-bottom: 100px;
 }
 
 .column1__row1 {
@@ -224,6 +259,10 @@ padding-bottom: 24px;
 .collage__column1 img {
   width: 100%;
 }
+
+.column1__row2{
+  position: relative;
+} 
 
 .row1__img {
   width: 100%;
@@ -254,4 +293,138 @@ padding-bottom: 24px;
 
 .big{
   flex:0 1 60%
+}
+
+.shop__body {
+text-align: center;
+background-color: #282f35;
+}
+
+.shop__btn {
+  margin-top: 75px;
+  margin-bottom: 65px;
+  border: 1px solid rgba(255,255,255,0.5);
+  color: white;
+  background-color: #282f35;
+  font-weight: 700;
+  font-family: "Lato";
+  text-align: center;
+  font-size: 14px;
+  padding: 19px 50px;
+}
+
+.form {
+
+}
+
+.container2 {
+  min-width: 123px;
+}
+
+.form__body {
+  text-align: center;
+  
+}
+
+.form__logo {
+  padding-top: 95px;
+  padding-bottom: 25px;
+}
+
+.form__title {
+  color: #848789;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Lato";
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 35px;
+}
+
+.form__area {
+  margin-bottom: 110px;
+  border: 1px solid #d3d7d9;
+  display: inline-block;
+}
+
+.foorm__area-input {
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Lato";
+  text-align: center;
+  text-align-last: left;
+  padding: 20px 200px 20px 42px;
+}
+
+::placeholder{
+  color: #d3d7d9;
+}
+
+.form__btn{
+  color: white;
+  font-weight: 300;
+  font-family: "Lato";
+  text-align: center;
+  font-size: 24px;
+  
+}
+
+.form__btn span{
+  background-color: #64c29e;
+  padding-top: 17px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer {
+  background-color: #f7f7f7;
+}
+.container {
+}
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+
+.footer__left {
+}
+
+.footer__left p {
+  padding-bottom: 4px;
+  font-size: 16px;
+  color: #848789;
+  font-weight: 700;
+  font-family: "Lato";
+}
+
+.footer__left p:last-child {
+  padding-bottom: 0;
+}
+
+.footer__center {
+  margin-left: -180px;
+}
+
+.footer__center-link{
+  margin-right: 23px;
+}
+
+.footer__right{
+  position: relative;
+}
+
+.footer__right span {
+  font-size: 14px;
+  color: #848789;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Lato";
+  position: absolute;
+  top: 8px;
+  left: -96px;
 }
